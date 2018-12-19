@@ -21,5 +21,3 @@ class Drone :
 
     def volume(self):
         pass    #récupérer données du fichier drone
-
-NIQUE TA MERE
