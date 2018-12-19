@@ -6,9 +6,9 @@ class Drone :
         self.adressIP = None
         self.rb = 0
         self.coord = (x, y, z)
-        self.previoscoord = ()
+        self.previouscoord = (0, 0, 0)
         self.speed = (xd, yd, zd)
-        self.previosspeed = ()
+        self.previousspeed = (0, 0, 0)
         self.volume = 0  #? fichier de données sur les drones
 
     def attribute_id(self, id, IP):
