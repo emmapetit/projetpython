@@ -1,0 +1,18 @@
+import class_drone
+		
+def approche_filets(self,epsilon,distances_lim,speeds_lim):
+	# filets à 6m selon x et 5.5m selon y du centre
+    # distances_lim et speeds_lim sont des tupples (x,y) et (xd,yd)
+
+    if self.coord[0] < distances_lim[0]:
+	    if self.speed[0] < speeds_lim[0] and self.coord[0] > epsilon:
+	    	#ouvrir une fenêtre alerte avec msg "votre drone se rapproche des filets"
+        else:
+          	#ouvrir une fenêtre alerte avec msg "colision potentielle"
+            
+            
+	elif self.coord[1] < distances_lim[1]:
+    	if self.speed[1] < speeds_lim[1] and self.coord[1] > epsilon:
+        	#ouvrir une fenêtre alerte avec msg "votre drone se rapproche des filets"
+        else:
+          	#ouvrir une fenêtre alerte avec msg "colision potentielle"
