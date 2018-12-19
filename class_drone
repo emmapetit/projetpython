@@ -1,0 +1,23 @@
+class Drone :
+    "attribut du drone"
+
+    def __init__(self, id, x, y, z, xd, yd, zd):
+        self.id = id
+        self.adressIP = None
+        self.rb = 0
+        self.coord = (x, y, z)
+        self.speed = (xd, yd, zd)
+        self.volume = 0  #? fichier de données sur les drones
+
+    def attribute_id(self, id, IP):
+        self.id = id
+        self.adressIP = IP
+
+    def update_position(self, x, y, z):
+        self.coord = (x, y, z)
+
+    def update_speed(self, xd, yd, zd):
+        self.speed = (xd, yd, zd)
+
+    def volume(self):
+        pass    #récupérer données du fichier drone
